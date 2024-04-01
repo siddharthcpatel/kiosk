@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 500px;
+    height: 800px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-logo {
+    margin: 40px auto 50px auto;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2:first-child {
+    margin-top: -20px;
+}
+
+a {
+    width: 190px;
+    height: 44px;
+    cursor: pointer;
+}
+
+.item-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+}
+
+.item-columns {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+.item-column {
+    display: flex;
+    flex-direction: row;
+    width: 84px;
+    justify-content: space-between;
+}
+
+.item {
+    background-color: transparent;
+    width: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 0;
+}
+
+.item-img {
+    height: 84px;
+    width: 84px;
+    margin-bottom: 8px;
+    background-color: #80FF00;
+}
+
+.item-name {
+    font-size: 10px;
+}
+
+.item-price {
+    font-size: 10px;
+    color: #80FF00;
+}
+
+.selected-item {
+    box-shadow: 0px 0px 0px 4px #000000, 0px 0px 0px 6px #80FF00;
+}
+
+.selection {
+    display: flex;
+    font-size: 10px;
+    margin: 60px 50px 10px 50px;
+    font-weight: 600;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto 50px auto;
+}
+
+.button-primary,
+.button-secondary {
+    cursor: pointer;
+    width: 190px;
+    height: 44px;
+    font-size: 18px;
+    border: 0;
+    font-weight: 600;
+}
+
+.button-primary {
+    background-color: #80FF00;
+    color: #000000;
+}
+
+.button-secondary {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.checkout {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.checkout-burger {
+    color: #80FF00;
+}
+
+.checkout-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.selection-checkout {
+    margin: 0;
+}
+
+.checkout-total * {
+    color: #80FF00;
+}
+
+
+.line {
+    margin-top: 340px;
+    height: 2px;
+    width: 400px;
+    background-color: #80FF00;
+}
+
+.checkout-buttons {
+    margin-top: 64px;
+}
+
+.end-img {
+    margin: auto;
+}
