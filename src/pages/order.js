@@ -11,22 +11,26 @@ export default function Home() {
         {
             index: 1,
             name: "Potato",
-            price: "2"
+            price: "2",
+            src: "/patty/potato.png"
         },
         {
             index: 2,
             name: "Beans",
-            price: "3"
+            price: "3",
+            src: "/patty/beans.png"
         },
         {
             index: 3,
             name: "Paneer",
-            price: "3"
+            price: "3",
+            src: "/patty/paneer.png"
         },
         {
             index: 4,
             name: "Mixed Veg",
-            price: "2"
+            price: "2",
+            src: "/patty/mixedveg.png"
         }
     ];
 
@@ -34,22 +38,26 @@ export default function Home() {
         {
             index: 1,
             name: "Mozarella",
-            price: "2"
+            price: "2",
+            src: "/cheese/mozarella.png"
         },
         {
             index: 2,
             name: "Cheddar",
-            price: "3"
+            price: "3",
+            src: "/cheese/cheddar.png"
         },
         {
             index: 3,
             name: "Greek Feta",
-            price: "3"
+            price: "3",
+            src: "/cheese/feta.png"
         },
         {
             index: 4,
             name: "Monterey",
-            price: "2"
+            price: "2",
+            src: "/cheese/monterey.png"
         }
     ];
 
@@ -57,22 +65,26 @@ export default function Home() {
         {
             index: 1,
             name: "Lettuce",
-            price: "2"
+            price: "2",
+            src: "/veggies/lettuce.png"
         },
         {
             index: 2,
             name: "Tomatoes",
-            price: "3"
+            price: "3",
+            src: "/veggies/tomato.png"
         },
         {
             index: 3,
             name: "Onions",
-            price: "3"
+            price: "3",
+            src: "/veggies/onion.png"
         },
         {
             index: 4,
             name: "Pickles",
-            price: "2"
+            price: "2",
+            src: "/veggies/pickle.png"
         }
     ];
 
@@ -129,7 +141,15 @@ export default function Home() {
                                 onClick={() => handlePatty(patty.index)}
                                 key={patty.index}
                             >
-                                <div className="item-img"></div>
+                                <div className="item-img">
+                                    <Image
+                                        src={patty.src}
+                                        alt={patty.name}
+                                        width={84}
+                                        height={84}
+                                        style={{ objectFit: "contain" }}
+                                    />
+                                </div>
                                 <div className="item-column">
                                     <span className="item-name">{patty.name}</span>
                                     <span className="item-price">{patty.price}</span>
@@ -145,7 +165,15 @@ export default function Home() {
                                 onClick={() => handleCheese(cheeseItem.index)}
                                 key={cheeseItem.index}
                             >
-                                <div className="item-img"></div>
+                                <div className="item-img">
+                                    <Image
+                                        src={cheeseItem.src}
+                                        alt={cheeseItem.name}
+                                        width={84}
+                                        height={84}
+                                        style={{ objectFit: "contain" }}
+                                    />
+                                </div>
                                 <div className="item-column">
                                     <span className="item-name">{cheeseItem.name}</span>
                                     <span className="item-price">{cheeseItem.price}</span>
@@ -161,7 +189,15 @@ export default function Home() {
                                 className={`item ${activeVeggies.includes(veggie.index) ? 'selected-item' : ''}`}
                                 onClick={() => toggleVeggie(veggie.index)}
                             >
-                                <div className="item-img"></div>
+                                <div className="item-img">
+                                    <Image
+                                        src={veggie.src}
+                                        alt={veggie.name}
+                                        width={84}
+                                        height={84}
+                                        style={{ objectFit: "contain" }}
+                                    />
+                                </div>
                                 <div className="item-column">
                                     <span className="item-name">{veggie.name}</span>
                                     <span className="item-price">{veggie.price}</span>
